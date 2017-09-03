@@ -1,0 +1,28 @@
+<main class="main">
+  <h1 class="{{ title.titleClass }}">A Multi-Content Page</h1>
+  <div class="multi-content__wrapper">
+    <h2 class="{{ title.titleClass }}">{{ title.titleText }}</h2>
+    <div class="col-12">
+    {{> atoms-paragraphs }}
+    </div>
+  </div>
+  <div class="multi-content__wrapper">
+    <h2 class="{{ title.titleClass }}">{{ title.titleText }}</h2>
+    <ul class="item-list">
+      {{# listItems.four }}
+        {{> molecules-single-list-item }}
+      {{/ listItems.four }}
+    </ul>
+  </div>
+  <div class="multi-content__wrapper">
+    <h2 class="{{ title.titleClass }}">{{ title.titleText }}</h2>
+    <div class="col-12">
+      <div class="video__wrapper">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WFVVwLERoX4?rel=0" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-12">
+      {{> atoms-paragraphs }}
+    </div>
+  </div>
+</main>

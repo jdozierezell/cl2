@@ -1,0 +1,44 @@
+.site-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-green;
+  position: relative;
+  z-index: 100;
+}
+
+.site-header__logo {
+  padding: $ms-3 0;
+  text-align: center;
+}
+
+.site-header__logo img {
+  max-width: 100%;
+  max-height: $ms-8;
+}
+
+.site-header__search {
+  display: none;
+  font-size: $ms-2;
+  border: 0;
+}
+
+.site-header__search input {
+  padding: $ms--3;
+}
+
+.site-header__search button {
+  line-height: initial;
+  padding: $ms--3;
+}
+
+@media (min-width: $bp-med) {
+  .site-header__logo {
+    text-align: left;
+  }
+
+  .site-header__search {
+    display: block;
+  }
+}

@@ -1,0 +1,36 @@
+.main {
+  width: $col-12;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: $ms-base;
+}
+
+.main--single-item {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.main--single-item__button-wrapper {
+  margin: $ms-3 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.main--single-item__button-wrapper .btn:not(:first-child) {
+  margin-left: $ms-base;
+}
+
+.main--single-item::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@media (min-width: $bp-med) {
+  .main {
+    width: calc(#{$col-12} - (#{$ms-6} * 5) - 2em); // full width minus width of sidebar-nav
+  }
+}

@@ -1,0 +1,14 @@
+<main class="main main--single-item">
+  <h1 class="{{ title.titleClass }}">{{ title.titleText }}</h1>
+  <div class="{{ img.containerClass }}">
+    {{> atoms-image }}
+  </div>
+  <div class="{{ descriptionClass }}">
+    {{> atoms-paragraphs }}
+    <div class="{{ buttonWrapperClass }}">
+      {{# listItems.two }}
+        {{> atoms-button }}
+      {{/ listItems.two }}
+    </div>
+  </div>
+</main>
